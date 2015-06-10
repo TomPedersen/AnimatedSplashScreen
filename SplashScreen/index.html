@@ -16,7 +16,11 @@
     </body>
     <script>
 
-      var bouncer = function(){
+      var taborBouncer = function(){
+        $('#taborLogo').effect( "bounce", {times:2, direction:'left'}, 500 );
+      };
+
+      var techBouncer = function(){
         $('#techLogo').effect( "bounce", {times:5, direction:'right'}, 550 );
       };
 
@@ -33,14 +37,20 @@
       $(document).ready(function(){
           setTimeout(function(){
             slider();
-            bouncer();
+            techBouncer();
           }, 1750);
       });
 
       $(document).ready(function(){
           setTimeout(function(){
+            taborBouncer();
+          }, 1870);
+      });
+
+      $(document).ready(function(){
+          setTimeout(function(){
             $('#copyright').fadeIn(800);
-          }, 2000);        
+          }, 2650);        
       });
     </script>
 </html>

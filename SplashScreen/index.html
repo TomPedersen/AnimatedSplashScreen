@@ -8,49 +8,11 @@
       <link href='http://fonts.googleapis.com/css?family=Fugaz+One|Black+Ops+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>    
     </head>
     <body>
-        <div id="splash">
-          <div id="taborLogo">Tabor</div>
-          <div id="techLogo">Tech</div>
-          <div id="copyright">©</div>
-        </div>
+      <div id="splash">
+        <div id="taborLogo">Tabor</div>
+        <div id="techLogo">Tech</div>
+        <div id="copyright">©</div>
+      </div>
+      <script type="text/javascript" src="external_javascript.js"></script>
     </body>
-    <script>
-
-      var taborBouncer = function(){
-        $('#taborLogo').effect( "bounce", {times:2, direction:'left'}, 500 );
-      };
-
-      var techBouncer = function(){
-        $('#techLogo').effect( "bounce", {times:5, direction:'right'}, 550 );
-      };
-
-      var slider = function(){
-        $('#techLogo').animate({right: "140px"}, 200);
-      };
-
-      $(document).ready(function(){
-          setTimeout(function(){
-            $('#taborLogo').fadeIn(800);
-          }, 1000);        
-      });
-
-      $(document).ready(function(){
-          setTimeout(function(){
-            slider();
-            techBouncer();
-          }, 1750);
-      });
-
-      $(document).ready(function(){
-          setTimeout(function(){
-            taborBouncer();
-          }, 1870);
-      });
-
-      $(document).ready(function(){
-          setTimeout(function(){
-            $('#copyright').fadeIn(800);
-          }, 2650);        
-      });
-    </script>
 </html>
